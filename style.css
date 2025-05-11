@@ -1,0 +1,111 @@
+:root {
+    --bg: #f9f9f9;
+    --text: #222;
+    --accent: #4f46e5;
+    --muted: #666;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.section {
+    padding: 3rem 0;
+    border-top: 1px solid #eee;
+}
+
+.project-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-list li {
+    margin-bottom: 1rem;
+}
+
+.contact-list li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+}
